@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Application.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/My_Application.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/My_Application.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1819929269/My_Application.audio_service.iml" filepath="$PROJECT_DIR$/.idea/modules/1819929269/My_Application.audio_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/904812472/My_Application.audio_session.iml" filepath="$PROJECT_DIR$/.idea/modules/904812472/My_Application.audio_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module/.android/Flutter/My_Application.flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/module/.android/Flutter/My_Application.flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-816160870/My_Application.just_audio.iml" filepath="$PROJECT_DIR$/.idea/modules/-816160870/My_Application.just_audio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1245861396/My_Application.path_provider.iml" filepath="$PROJECT_DIR$/.idea/modules/1245861396/My_Application.path_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1331908389/My_Application.sqflite.iml" filepath="$PROJECT_DIR$/.idea/modules/1331908389/My_Application.sqflite.iml" />
+    </modules>
+  </component>
+</project>
