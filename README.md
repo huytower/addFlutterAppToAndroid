@@ -8,6 +8,7 @@ Open this `module` folder as `Flutter project` :
 1. run `flutter clean`
 2. run `flutter pub get`
 3. in `.android/app/src/main/`
+
     3.a `AndroidManifest.xml` file, paste these code lines :
     
     
@@ -93,4 +94,5 @@ Open this `module` folder as `Flutter project` :
         }
 
 Open `Android project` with `addFlutterAppToAndroid` folder,
+
 then run its application on emulator
