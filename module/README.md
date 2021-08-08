@@ -96,3 +96,7 @@ Open this `module` folder as `Flutter project` :
 Open `Android project` with `addFlutterAppToAndroid` folder,
 
 then run its application on emulator
+
+P/S : The sample code might be related to this issue (MUST take a look) :
+
+https://github.com/ryanheise/audio_service/issues/787

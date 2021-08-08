@@ -32,6 +32,9 @@
     <exclude-output />
     <content url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android">
       <sourceFolder url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android/build/generated/res/resValues/debug" type="java-resource" />
       <excludeFolder url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android/.gradle" />
       <excludeFolder url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android/build" />
     </content>
