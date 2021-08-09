@@ -1,5 +1,5 @@
-# addFlutterAppToAndroid : Android project name
-# module : Flutter module name (as Flutter project)
+# "addFlutterAppToAndroid" : Android project name
+# "module" : Flutter module name (as Flutter project)
 
 ## Getting Started
 Open `Android Studio 4.2.2` (If tried with Android Studio latest might be got strange error)
