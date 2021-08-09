@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'AudioPlayerHandler.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsFlutterBinding.ensureInitialized();
+
+  print('main()');
 
   // EXCEPTIONS HERE (MissingPluginException bug)
   var audioHandler = await AudioService.init(

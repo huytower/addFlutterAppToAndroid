@@ -1,47 +1,85 @@
 package nct.mobile.android.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
+import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.android.FlutterFragment
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.plugins.GeneratedPluginRegistrant
+import com.ryanheise.audioservice.AudioServicePlugin
+import io.flutter.embedding.android.FlutterFragmentActivity
+import io.flutter.embedding.engine.FlutterEngineCache
+import io.flutter.embedding.engine.dart.DartExecutor
 
 class MainActivity : AppCompatActivity() {
+//class MainActivity : FlutterFragmentActivity() {
     companion object {
-        // Define a tag String to represent the FlutterFragment within this
-        // Activity's FragmentManager. This value can be whatever you'd like.
         private const val TAG_FLUTTER_FRAGMENT = "flutter_fragment"
     }
 
-    // Declare a local variable to reference the FlutterFragment so that you
-    // can forward calls to it later.
     private var flutterFragment: FlutterFragment? = null
+
+//    override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
+//        Log.d("","configureFlutterEngine() : $flutterEngine");
+//
+//        GeneratedPluginRegistrant.registerWith(flutterEngine)
+//    }
+//
+//    override fun provideFlutterEngine(context: Context): FlutterEngine? {
+//        val flutterEngine = AudioServicePlugin.getFlutterEngine(context);
+//
+//        Log.d("","provideFlutterEngine() : $flutterEngine");
+//
+//        return flutterEngine
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+//        val flutterEngine = AudioServicePlugin.getFlutterEngine(this);
+//
+//        Log.d("","getFlutterEngine() : $flutterEngine");
+//
+//        GeneratedPluginRegistrant.registerWith(flutterEngine)
+//
+//        Log.d("","registerWith() : $flutterEngine");
+//
+//        // Start executing Dart code in the FlutterEngine.
+//        flutterEngine.dartExecutor.executeDartEntrypoint(
+//            DartExecutor.DartEntrypoint.createDefault()
+//        )
+//
+//        // Cache the pre-warmed FlutterEngine to be used later by FlutterFragment.
+//        FlutterEngineCache
+//            .getInstance()
+//            .put("my_engine_id", flutterEngine)
+
         setContentView(R.layout.activity_main)
 
-        // Get a reference to the Activity's FragmentManager to add a new
-        // FlutterFragment, or find an existing one.
         val fragmentManager: FragmentManager = supportFragmentManager
 
-        // Attempt to find an existing FlutterFragment, in case this is not the
-        // first time that onCreate() was run.
         flutterFragment = fragmentManager
             .findFragmentByTag(TAG_FLUTTER_FRAGMENT) as FlutterFragment?
 
-        // Create and attach a FlutterFragment if one does not exist.
         if (flutterFragment == null) {
             val newFlutterFragment = FlutterFragment.createDefault()
 
-            flutterFragment = newFlutterFragment
+//            flutterFragment = FlutterFragment.withNewEngine()
+//                .shouldAttachEngineToActivity(false)
+//                .build();
 
             fragmentManager
                 .beginTransaction()
-                .add(
+                .replace(
                     R.id.id_f1,
                     newFlutterFragment,
                     TAG_FLUTTER_FRAGMENT
                 )
+                .addToBackStack(null)
                 .commit()
         }
 

@@ -13,6 +13,8 @@ dependencies:
 
   audio_service: ^0.18.0-beta.0
   just_audio: ^0.9.5
+  path_provider: ^2.0.2
+  sqflite: ^2.0.0+3
 
 dev_dependencies:
   flutter_test:
