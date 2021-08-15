@@ -23,40 +23,11 @@ class MainActivity : AppCompatActivity() {
 
     private var flutterFragment: FlutterFragment? = null
 
-//    override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
-//        Log.d("","configureFlutterEngine() : $flutterEngine");
-//
-//        GeneratedPluginRegistrant.registerWith(flutterEngine)
-//    }
-//
-//    override fun provideFlutterEngine(context: Context): FlutterEngine? {
-//        val flutterEngine = AudioServicePlugin.getFlutterEngine(context);
-//
-//        Log.d("","provideFlutterEngine() : $flutterEngine");
-//
-//        return flutterEngine
-//    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        val flutterEngine = AudioServicePlugin.getFlutterEngine(this);
-//
-//        Log.d("","getFlutterEngine() : $flutterEngine");
-//
-//        GeneratedPluginRegistrant.registerWith(flutterEngine)
-//
-//        Log.d("","registerWith() : $flutterEngine");
-//
-//        // Start executing Dart code in the FlutterEngine.
-//        flutterEngine.dartExecutor.executeDartEntrypoint(
-//            DartExecutor.DartEntrypoint.createDefault()
-//        )
-//
-//        // Cache the pre-warmed FlutterEngine to be used later by FlutterFragment.
-//        FlutterEngineCache
-//            .getInstance()
-//            .put("my_engine_id", flutterEngine)
+//        val flutterEngine =
+//            AudioServicePlugin.getFlutterEngine(this);
 
         setContentView(R.layout.activity_main)
 
@@ -66,11 +37,9 @@ class MainActivity : AppCompatActivity() {
             .findFragmentByTag(TAG_FLUTTER_FRAGMENT) as FlutterFragment?
 
         if (flutterFragment == null) {
-            val newFlutterFragment = FlutterFragment.createDefault()
-
-//            flutterFragment = FlutterFragment.withNewEngine()
-//                .shouldAttachEngineToActivity(false)
-//                .build();
+//            val newFlutterFragment = FlutterFragment.createDefault()
+            val newFlutterFragment =
+                FlutterFragment.withCachedEngine(ENGINE_ID).build<FlutterFragment>()
 
             fragmentManager
                 .beginTransaction()

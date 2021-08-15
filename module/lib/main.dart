@@ -4,11 +4,8 @@ import 'package:flutter/material.dart';
 import 'AudioPlayerHandler.dart';
 
 Future<void> main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
 
-  print('main()');
-
-  // EXCEPTIONS HERE (MissingPluginException bug)
   var audioHandler = await AudioService.init(
     builder: () => AudioPlayerHandler(),
     config: const AudioServiceConfig(
@@ -18,10 +15,13 @@ Future<void> main() async {
     ),
   );
 
-  // CAN NOT PASS TO HERE
-  print('audio player = $audioHandler');
+  var list = <MediaItem>[];
 
-  // CAN NOT PASS TO HERE
+  list.add(MediaItem(id: "https://luan.xyz/files/audio/ambient_c_motion.mp3", title: 'Title'));
+
+  audioHandler.addQueueItems(list);
+  audioHandler.play();
+
   runApp(MyApp());
 }
 
