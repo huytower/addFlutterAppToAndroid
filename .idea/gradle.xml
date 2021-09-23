@@ -4,21 +4,10 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="testRunner" value="PLATFORM" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/module/.android/Flutter" />
-            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/audio_service-0.18.0-beta.0/android" />
-            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/audio_session-0.1.5/android" />
-            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/just_audio-0.9.5/android" />
-            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/android" />
-            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.0+3/android" />
-          </set>
-        </option>
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/7.2/libexec" />
         <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>

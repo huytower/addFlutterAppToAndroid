@@ -1,7 +1,9 @@
-rootProject.name = "My Application"
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+dependencyResolutionManagement {
+    /// RepositoriesMode.PREFER_PROJECT navigate install maven repository in /app/build.gradle
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+}
+
+rootProject.name = "run_flutter_module_in_android_app"
 include ':app'
-setBinding(new Binding([gradle: this]))
-evaluate(new File(
-  settingsDir,
-  'module/.android/include_flutter.groovy'
-))

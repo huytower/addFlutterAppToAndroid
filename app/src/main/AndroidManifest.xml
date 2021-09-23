@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nct.mobile.android.myapplication">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.run_flutter_module_in_android_app">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
+    <uses-sdk tools:overrideLibrary="com.ryanheise.audioservice, com.tekartik.sqflite, io.flutter.plugins.share, io.flutter.plugins.sharedpreferences, io.flutter.plugins.pathprovider,
+     dev.fluttercommunity.plus.packageinfo, io.github.ponnamkarthik.toast.fluttertoast, dev.fluttercommunity.plus.device_info, io.flutter.plugins.urllauncher" />
+
     <application
-        android:name=".MainApplication"
-        android:allowBackup="false"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.Run_flutter_module_in_android_app">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- EDIT THE android:name ATTRIBUTE IN YOUR EXISTING "ACTIVITY" ELEMENT -->
+
         <activity android:name="com.ryanheise.audioservice.AudioServiceActivity" />
 
         <!-- ADD THIS "SERVICE" element -->
@@ -32,7 +37,7 @@
         </service>
 
         <!-- ADD THIS "RECEIVER" element -->
-        <receiver android:name="com.ryanheise.audioservice.MediaButtonReceiver">
+        <receiver android:name="com.ryanheise.audioservice.MediaButtonReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
