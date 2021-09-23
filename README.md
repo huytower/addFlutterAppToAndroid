@@ -15,8 +15,8 @@ via remote maven repository.
 
 ### Getting Started, how to included Module
 
-##### [Android platform - Android native Project - Tools : Android Studio]
-##### [Android platform - React Native Project - Tools : Visual Studio Code]
+##### [Android platform - Android native Project - Tools : Android Studio](https://github.com/huytower/addFlutterModuleToAndroidApp/blob/main/README_Android_Native_Project.md)
+##### [Android platform - React Native Project - Tools : Visual Studio Code](https://github.com/huytower/addFlutterModuleToAndroidApp/blob/main/README_React_Native_Project.md)
 
 #### Tools :
 
