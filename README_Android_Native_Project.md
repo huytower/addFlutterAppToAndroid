@@ -95,7 +95,7 @@ In the android project,
    }   
    ```
 
-3. [How to show `flutter module` on Android UI](https://gitlab.nct.vn/nhaccuatui/frontend/iot-projects/nhaccuatui/plugin/blob/dev/README_Android_Native_Project.md#iii-how-to-show-flutter-module-on-android-ui)
+3. [How to show `flutter module` on Android UI](https://github.com/huytower/addFlutterModuleToAndroidApp/blob/main/README_Android_Native_Project.md#how-to-show-flutter-module-on-android-ui)
 
 4. Run Android App
 
@@ -125,7 +125,7 @@ You can use either I. or II. way to include `flutter module` into `Android proje
           'module/.android/include_flutter.groovy'
         ))
 
-4. [How to show `flutter module` on Android UI](https://gitlab.nct.vn/nhaccuatui/frontend/iot-projects/nhaccuatui/plugin/blob/dev/README_Android_Native_Project.md#iii-how-to-show-flutter-module-on-android-ui)
+4. [How to show `flutter module` on Android UI](https://github.com/huytower/addFlutterModuleToAndroidApp/blob/main/README_Android_Native_Project.md#how-to-show-flutter-module-on-android-ui)
 
 ##### II. Import `flutter module` via local maven repository.
 
@@ -188,7 +188,7 @@ In the android project,
    }   
    ```
 
-3. [How to show `flutter module` on Android UI](https://gitlab.nct.vn/nhaccuatui/frontend/iot-projects/nhaccuatui/plugin/blob/dev/README_Android_Native_Project.md#iii-how-to-show-flutter-module-on-android-ui)
+3. [How to show `flutter module` on Android UI](https://github.com/huytower/addFlutterModuleToAndroidApp/blob/main/README_Android_Native_Project.md#how-to-show-flutter-module-on-android-ui)
 
 4. Run Android App
 

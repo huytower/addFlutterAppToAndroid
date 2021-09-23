@@ -1,6 +1,6 @@
 # Android platform - React Native Project - Tools : Visual Studio Code
 
-The implement is same about section I. or II. in [Android Native Project](https://gitlab.nct.vn/nhaccuatui/frontend/iot-projects/nhaccuatui/plugin/blob/dev/README_Android_Native_Project.md)
+The implement is same about section I. or II. in [Android Native Project](https://github.com/huytower/addFlutterModuleToAndroidApp/blob/main/README_Android_Native_Project.md)
 
 You can use either section I. or II. way, to include `flutter module` into `Android project`.
 
@@ -244,8 +244,7 @@ III. How to show `flutter module` on Android UI :
     ```
 
 # iOs platform - React Native Project - Tools : Visual Studio Code
-Same as [iOs Native Project](https://gitlab.nct.vn/nhaccuatui/frontend/iot-projects/nhaccuatui/plugin/blob/dev/README_iOs_Native_Project.md)
-
+Same as [iOs Native Project]
 ## Notice
 
 To create `react native` project, use this command line :
